@@ -53,7 +53,8 @@ public class AccountManager {
                         connection.rollback();
                         connection.setAutoCommit(true);
                     }
-                } else {
+                }
+                else {
                     System.out.println("Invalid Security Pin!");
                 }
 
@@ -170,7 +171,7 @@ public class AccountManager {
 
                         System.out.println( "Transaction Successful!");
                         System.out.println("Rs." + amount + " Transfer Successfully");
-                        System.out.println(amount + " Transfer  to"+  receiverName);
+                        System.out.println(amount + " Transfer  to "+  receiverName);
                         connection.commit();
                         connection.setAutoCommit(true);
                         return;
@@ -240,5 +241,9 @@ public class AccountManager {
         } else {
             System.out.println(" Invalid Security Pin");
         }
+    }
+    public static String maskAccountNumber(long accNo) {
+        String s = String.valueOf(accNo);
+        return "XXXX-XXXX-" + s.substring(s.length() - 4);
     }
 }

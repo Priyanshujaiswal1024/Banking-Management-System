@@ -50,11 +50,17 @@ public class BankingApp {
                                     account_Number = Account.open_account(email);
 
                                     System.out.println("Account opened successfully  your  Account number : " + account_Number);
-                                } else {
+                                }
+                                else {
                                     break;
                                 }
                             }
                             account_Number = Account.getAccount_number(email);
+                            System.out.println("--------------------------------");
+                            System.out.println("Welcome to Banking Dashboard");
+                            System.out.println("Account: " + AccountManager.maskAccountNumber(account_Number));
+                            System.out.println("--------------------------------");
+
                             int choice2 = 0;
                             while (choice2 != 6) {
                                 System.out.println("\n1. Debit");
@@ -99,6 +105,7 @@ public class BankingApp {
 
                     case 3:
                         System.out.println("Thankyou for using Banking System");
+                        System.out.println("Exiting...");
                         return;
                     default:
                         System.out.println("Invalid choice");
