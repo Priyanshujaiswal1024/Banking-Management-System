@@ -23,7 +23,9 @@ This project allows users to register, log in, open bank accounts, and perform b
 - **JDBC**
 - **MySQL**
 - **IntelliJ IDEA**
+
 ---
+
 ## 📂 Project Structure
 Banking-Management-System
 │
@@ -47,18 +49,3 @@ Banking-Management-System
 ├── .gitignore
 ├── Banking-Management-System.iml
 └── README.md
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
