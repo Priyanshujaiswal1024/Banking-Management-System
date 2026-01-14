@@ -23,8 +23,42 @@ This project allows users to register, log in, open bank accounts, and perform b
 - **JDBC**
 - **MySQL**
 - **IntelliJ IDEA**
-
 ---
-
 ## 📂 Project Structure
+Banking-Management-System
+│
+├── src
+│ ├── app
+│ │ └── BankingApp.java
+│ │
+│ ├── accounts
+│ │ ├── Account.java
+│ │ └── AccountManager.java
+│ │
+│ ├── transactions
+│ │ └── Transactions.java
+│ │
+│ ├── config
+│ │ └── DBConnection.java
+│ │
+│ └── user
+│ └── User.java
+│
+├── .gitignore
+├── Banking-Management-System.iml
+└── README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
