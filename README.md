@@ -28,4 +28,3 @@ This project allows users to register, log in, open bank accounts, and perform b
 
 ## 📂 Project Structure
 
-
